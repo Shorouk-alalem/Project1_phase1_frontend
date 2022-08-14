@@ -218,6 +218,7 @@ nav > span {
   overflow-x: hidden;
   font-weight: bold;
   margin: 10px;
+  padding:0;
   color: grey;
   line-height: 2;
 }

@@ -337,7 +337,19 @@ header > img {
     display: block;
     margin-right: 12%;
   }
+  .rate {
+      margin-right: 0.4rem;
+      font-size: 1.2rem ;
+      color: #b4690e;
 
+  }
+  .fa-star {
+    color: #000000;
+  }
+  .checked {
+    color:yellow;
+  }
+ 
   /***************header******************/
   .header{
     flex-direction: column-reverse;

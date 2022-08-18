@@ -2,6 +2,10 @@ const course_title = document.querySelectorAll(".title");
 const course_author = document.querySelectorAll(".author");
 const course_image = document.querySelectorAll(".image");
 const course_price = document.querySelectorAll(".price");
+const course_rating = document.querySelectorAll(".rate");
+const course_review = document.querySelectorAll(".reviewers");
+const course_price2 = document.querySelectorAll(".pre_discount");
+const bestseller = document.querySelectorAll(".bestseller");
 
 //fetching data
 const getCourses = async () => {
@@ -16,7 +20,18 @@ getCourses().then(
             course_title[i].textContent = coursedata[i].title;
             course_author[i].textContent = coursedata[i].author;
             course_image[i].src  = coursedata[i].image;
-            course_price[i].textContent = "$"+coursedata[i].price;
+            course_price[i].textContent = "E£"+coursedata[i].price;
+            course_rating[i].textContent = coursedata[i].rate;
+            course_review[i].textContent = "("+coursedata[i].reviews+")";
+            course_price2[i].textContent = "E£"+coursedata[i].pre_discount;
+            if (coursedata[i].bestseller==true) {
+                bestseller[i].textContent = "Bestseller"; 
+            }
+            else{
+                bestseller[i].textContent  = ""; 
+            }
+
+
         }
     }
 );

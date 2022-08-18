@@ -8,7 +8,8 @@
             "rate":4.4,
             "reviews": 29923,
             "price": 679.99,
-            "bestseller": false
+            "bestseller": false,
+            "pre_discount": 535.99
           } ,
           { "id": 2,
             "title": "Learning Python for Data Analysis and Visualization",
@@ -17,7 +18,8 @@
             "rate":4.4,
             "reviews": 17986,
             "price": 1599.99,
-            "bestseller": true
+            "bestseller": true,
+            "pre_discount": 535.99
           } ,
          { "id": 3,
             "title": "Python for Beginners-Learn programming from scratch",
@@ -26,7 +28,8 @@
             "rate":4.4,
             "reviews": 1770,
             "price": 679.99,
-            "bestseller": false
+            "bestseller": false,
+            "pre_discount": 535.99
           } ,
           { "id": 4,
           "title": "Learn Python: Python for Beginner",
@@ -35,7 +38,8 @@
           "rate":4.4,
           "reviews": 2768,
           "price": 319.99,
-          "bestseller": false
+          "bestseller": false,
+          "pre_discount": 535.99
         } ,
          { "id": 5,
         "title": "Python Beyond the Basics - Object-Oriented Programming",
@@ -44,7 +48,8 @@
         "rate":4.4,
         "reviews": 2929,
         "price": 519.99,
-        "bestseller": false
+        "bestseller": false,
+        "pre_discount": 535.99
        },
        { "id": 6,
           "title": "Hello world",
@@ -53,7 +58,8 @@
           "rate":4.4,
           "reviews": 2768,
           "price": 319.99,
-          "bestseller": false
+          "bestseller": false,
+          "pre_discount": 535.99
         } ,
          { "id": 7,
         "title": "Python is fun",
@@ -62,7 +68,8 @@
         "rate":4.4,
         "reviews": 2929,
         "price": 519.99,
-        "bestseller": false
+        "bestseller": true,
+        "pre_discount": 535.99
        }
 
 

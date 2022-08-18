@@ -229,8 +229,9 @@ nav > span {
 
 .courses-nav {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
 }
+
 
 .courses-block {
   border: 1px solid #d1d7dc;
@@ -273,6 +274,7 @@ nav > span {
   border-width: 1px;
   border-color: grey;
 }
+
 .courses-nav li .title {
   margin: 5px;
   font-size: 15px;
@@ -288,7 +290,24 @@ nav > span {
   padding-left: 10px;
   margin: 5px;
 }
+.price{
+  font-size: medium;
+  font-weight: bold;
+  margin-left: 0;
+}
+.pre_discount{
+  font-size:medium;
+  text-decoration: line-through;
+  color: gray;
+}
+.bestseller{
+  text-align: left;
+  background-color: #eceb98;
+  display:inline-flex;
+  width: 40%;
+  margin-top: 5%;
 
+}
 header {
   background-color: #fafafa;
   justify-content: space-around;
@@ -304,7 +323,6 @@ header {
   width: 25%;
   color: black;
   font-size: 30px;
-  height: fit-content;
   display: flex;
   flex-direction: column;
   margin: 70px;
@@ -318,6 +336,21 @@ header {
 
 header > img {
   height: 100%;
+}
+.fa-star {
+  color: #dddada;
+  border-color:rgb(255, 166, 0) ;
+
+}
+
+.rate {
+  font-size: 1.1rem;
+  color: #b4690e;
+  font-weight: 700;
+  margin-left: 2%;
+}
+.reviewers{
+  color:grey;
 }
 
 /*responsive*/

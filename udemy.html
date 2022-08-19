@@ -3,14 +3,15 @@
     <head>
         <meta charset=" UTF-8" name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="udemy.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Udemy HomePage</title>
     </head>
     <body>
         <nav class="navbar">
-            <img class="menu" src="https://img.icons8.com/ios-glyphs/344/menu--v1.png" />
+            <img alt="menu" class="menu" src="https://img.icons8.com/ios-glyphs/344/menu--v1.png" />
             <img class="logo" src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" alt="Udemy Logo" />
             <div class="dropdown">
-                <button class="dropbtn">Categories <i class="fa fa-caret-down"></i></button>
+                <button class="dropbtn">Categories</button>
                     <div class="dropdown-content">
                         <a href="#">Development</a>
                         <a href="#">Business</a>
@@ -29,29 +30,29 @@
             </div>
             <div class="search-container">
                 <form class="form-inline">
-                    <button class="search-button" type="submit"><img class="search-image" src="https://img.icons8.com/ios-glyphs/344/search--v1.png" /></button>
+                    <button class="search-button" type="submit"><img alt="icon" class="search-image" src="https://img.icons8.com/ios-glyphs/344/search--v1.png" /></button>
                     <input class="form-control" type="text" placeholder="Search for anything" aria-label="Search" />
                 </form>
             </div>
-            <span>Udemy Business</span>
+            <span class="business">Udemy Business</span>
 
-            <span>Teach on Udemy</span>
+            <span class="teach">Teach on Udemy</span>
             <img class="cart" src="https://img.icons8.com/material-outlined/344/shopping-cart--v1.png" alt="Cart Icon" />
             <button class="login">Log In</button>
             <button class="signup">Sign Up</button>
-            <button class="language"><img src="https://img.icons8.com/material-outlined/344/globe--v2.png" /></button>
+            <button class="language"><img alt="icon" src="https://img.icons8.com/material-outlined/344/globe--v2.png" /></button>
         </nav>
-        <header>
+        <header class="header">
             <div class="head-card">
-                <b>New to Udemy? Lucky you.</b>
-                <span>Courses start at E£169.99. Get your new-student offer before it expires.</span>
+                <b class="headtitle">New to Udemy? Lucky you.</b>
+                <span class="headtxt">Courses start at E£169.99. Get your new-student offer before it expires.</span>
             </div>
-            <img src="clock.jpg" alt="alarm clock image" />
+            <div class="clockimg"><img src="Images\clock.jpg" alt="alarm clock image" /> </div>
         </header>
         <div class="courses">
             <div class="container">
                 <h><b>A broad selection of courses</b></h>
-                <p>Choose from 185,000 online video courses with new additions published every month</p>
+                <p><br>Choose from 185,000 online video courses with new additions published every month</p>
                 <ul class="courses_list">
                     <il class="selected-category"> Python </il>
                     <il>  Excel </il>
@@ -73,56 +74,165 @@
                 <button class="explore">Explore Python</button>
 
                 <ul class="courses-nav">
-                    <li>
-                        <img src="python.PNG">
-                        <h3 class="title">Learn Python: The Complete Python Programming Course</h3>
-                        <h4 class="author">Avinash Jain, The Codex</h4>
-                        <h3 class="price">$94.99</h3>
+                    <li class="courseblock">
+                        <img class="image" alt="image"   src="">
+                        <h3 class="title"></h3>
+                        <h4 class="author"></h4>
+                        <div class="rating">
+                            <span class="rate"></span>
+                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                            <span class="fa fa-star-half-o" style="color:rgb(255, 166, 0) "></span>
+                            <span class="reviewers" ></span>
+
+                        </div>
+                        <div class="cost">
+                            <span class="price"><h3></h3></span> 
+                            <span class="pre_discount"><h3></h3></span>
+                        </div>
+                        <div class="bestseller"></div>
+
+
                     </li>
                     
-                    <li>
-                        <img src="data analysis.png">
-                        <h3 class="title">Learning Python for Data Analysis and Visualization</h3>
-                        <h4 class="author">Jose Portilla</h4>
-                        <h3 class="price">$94.99</h3>
+                    <li class="courseblock">
+                        <img class="image" alt="image"  src="">
+                        <h3 class="title"></h3>
+                        <h4 class="author"></h4>
+                        <div class="rating">
+                            <span class="rate"></span>
+                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                            <span class="fa fa-star-half-o" style="color:rgb(255, 166, 0) "></span>
+                            <span class="reviewers" ></span>
+
+                        </div>
+                        <div class="cost">
+                            <span class="price"><h3></h3></span> 
+                            <span class="pre_discount"><h3></h3></span>
+                        </div>
+                        <div class="bestseller"></div>
+
+
+
                     </li>
                     
-                    <li>
-                        <img src="from scratch.PNG">
-                        <h3 class="title">Python for Beginners - Learn Programming from scratch</h3>
-                        <h4 class="author">Edwin Diaz, Coding Faculty Solutions</h4>
-                        <h3 class="price">$94.99</h3>
+                    <li class="courseblock">
+                        <img class="image" alt="image"  src="">
+                        <h3 class="title"></h3>
+                        <h4 class="author"></h4>
+                        <div class="rating">
+                            <span class="rate"></span>
+                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                            <span class="fa fa-star-half-o" style="color:rgb(255, 166, 0) "></span>
+                            <span class="reviewers" ></span>
+
+                        </div>
+                        <div class="cost">
+                            <span class="price"><h3></h3></span> 
+                            <span class="pre_discount"><h3></h3></span>
+                        </div>
+                        <div class="bestseller"></div>
+
+
                     </li>
                     
-                    <li>
-                        <img src="beginners.PNG">
-                        <h3 class="title">Learn Python: Python for Beginners</h3>
-                        <h4 class="author">Abrar Hussain</h4>
-                        <h3 class="price">$94.99</h3>
+                    <li class="courseblock">
+                        <img class="image" alt="image"   src="">
+                        <h3 class="title"></h3>
+                        <h4 class="author"></h4>
+                        <div class="rating">
+                            <span class="rate"></span>
+                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                            <span class="fa fa-star-half-o" style="color:rgb(255, 166, 0) "></span>
+                            <span class="reviewers" ></span>
+
+                        </div>
+                        <div class="cost">
+                            <span class="price"><h3></h3></span> 
+                            <span class="pre_discount"><h3></h3></span>
+                        </div>
+                        <div class="bestseller"></div>
+
                     </li>
                     
-                    <li>
-                        <img src="data structure.PNG">
-                        <h3 class="title">Python Beyond the Basics - Object-Oriented Programming</h3>
-                        <h4 class="author">Infinite Skills</h4>
-                        <h3 class="price">$94.99</h3>
+                    <li class="courseblock">
+                        <img class="image" alt="image" src="">
+                        <h3 class="title"></h3>
+                        <h4 class="author"></h4>
+                        <div class="rating">
+                            <span class="rate"></span>
+                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                            <span class="fa fa-star-half-o" style="color:rgb(255, 166, 0) "></span>
+                            <span class="reviewers" ></span>
+
+                        </div>   
+                        <div class="cost">
+                            <span class="price"><h3></h3></span> 
+                            <span class="pre_discount"><h3></h3></span>
+                        </div>
+                        <div class="bestseller"></div>
+
+   
                     </li>
-                    <br>
-                    <li>
-                        <img src="kids.PNG">
-                        <h3 class="title">Python Beyond the Basics - Object-Oriented Programming</h3>
-                        <h4 class="author">Infinite Skills</h4>
-                        <h3 class="price">$94.99</h3>
+                    <li class="courseblock">
+                        <img class="image" alt="image"  src="">
+                        <h3 class="title"></h3>
+                        <h4 class="author"></h4>
+                        <div class="rating">
+                            <span class="rate"></span>
+                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                            <span class="fa fa-star-half-o" style="color:rgb(255, 166, 0) "></span>
+                            <span class="reviewers" ></span>
+
+                        </div>
+                        <div class="cost">
+                            <span class="price"></span> 
+                            <span class="pre_discount"></span>
+                        </div>
+                        <div class="bestseller"></div>
                     </li>
-                    <li>
-                        <img src="jupyter.PNG">
-                        <h3 class="title">Python Beyond the Basics - Object-Oriented Programming</h3>
-                        <h4 class="author">Infinite Skills</h4>
-                        <h3 class="price">$94.99</h3>
+                    <li class="courseblock">
+                        <img class="image" alt="image" src="">
+                        <h3 class="title"></h3>
+                        <h4 class="author"></h4>
+                        <div class="rating">
+                            <span class="rate"></span>
+                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                            <span class="fa fa-star-half-o" style="color:rgb(255, 166, 0) "></span>
+                            <span class="reviewers" ></span>
+
+                        </div>
+                        <div class="cost">
+                            <span class="price"></span> 
+                            <span class="pre_discount"></span>
+                        </div>
+                        <span class="bestseller"></span>
+
+
                     </li>
                 </ul>
             </div>
         </div>
-
+        <script src="udemy.js"></script>
     </body> 
 </html>

@@ -1,0 +1,77 @@
+
+{
+    "courses" : [  
+          { "id": 1,
+            "title": "Learn Python: The Complete Python Programming",
+            "author": "Avinash Jain, The Codex" ,
+            "image":"https://img-c.udemycdn.com/course/750x422/394676_ce3d_5.jpg",
+            "rate":4.4,
+            "reviews": 29923,
+            "price": 679.99,
+            "bestseller": false,
+            "pre_discount": 535.99
+          } ,
+          { "id": 2,
+            "title": "Learning Python for Data Analysis and Visualization",
+            "author": "Jose Portilla" ,
+            "image":"https://img-c.udemycdn.com/course/750x422/405878_e5a0_3.jpg",
+            "rate":4.4,
+            "reviews": 17986,
+            "price": 1599.99,
+            "bestseller": true,
+            "pre_discount": 535.99
+          } ,
+         { "id": 3,
+            "title": "Python for Beginners-Learn programming from scratch",
+            "author": "Edwin Diaz, Coding Faculty Solutions" ,
+            "image":"https://img-c.udemycdn.com/course/750x422/396876_cc92_7.jpg",
+            "rate":4.4,
+            "reviews": 1770,
+            "price": 679.99,
+            "bestseller": false,
+            "pre_discount": 535.99
+          } ,
+          { "id": 4,
+          "title": "Learn Python: Python for Beginner",
+          "author": "Abrar Hussain" ,
+          "image":"https://img-c.udemycdn.com/course/750x422/426570_1b91_3.jpg",
+          "rate":4.4,
+          "reviews": 2768,
+          "price": 319.99,
+          "bestseller": false,
+          "pre_discount": 535.99
+        } ,
+         { "id": 5,
+        "title": "Python Beyond the Basics - Object-Oriented Programming",
+        "author": "Infinte Skills" ,
+        "image":"https://img-c.udemycdn.com/course/750x422/449532_2aa9_7.jpg",
+        "rate":4.4,
+        "reviews": 2929,
+        "price": 519.99,
+        "bestseller": false,
+        "pre_discount": 535.99
+       },
+       { "id": 6,
+          "title": "Hello world",
+          "author": "Abrar Hussain" ,
+          "image":"https://img-c.udemycdn.com/course/750x422/426570_1b91_3.jpg",
+          "rate":4.4,
+          "reviews": 2768,
+          "price": 319.99,
+          "bestseller": false,
+          "pre_discount": 535.99
+        } ,
+         { "id": 7,
+        "title": "Python is fun",
+        "author": "Infinte Skills" ,
+        "image":"https://img-c.udemycdn.com/course/750x422/449532_2aa9_7.jpg",
+        "rate":4.4,
+        "reviews": 2929,
+        "price": 519.99,
+        "bestseller": true,
+        "pre_discount": 535.99
+       }
+
+
+        ]
+    }

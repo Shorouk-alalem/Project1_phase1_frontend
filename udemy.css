@@ -1,3 +1,7 @@
+
+.customize{
+  color:#b4690e;
+}
 ul li{
   display: inline-block;
 }
@@ -12,10 +16,10 @@ display:block;
 }
 a:link { text-decoration: none; }
 a:visited { text-decoration: none; } 
-a:hover { text-decoration: none; }  
-a:active { text-decoration: none; }
+a:hover { text-decoration:none;}  
+a:active { text-decoration:#000; }
 a {
-  color: #000;
+  color: gray;
 }
 .flex-container {
   top: 10%;
@@ -48,7 +52,7 @@ body {
   display: none;
 }
 
-.navbar {
+.navigationbar {
   width: 100%;
   height: 70px;
   display: flex;
@@ -71,7 +75,7 @@ body {
   margin: 0 10px;
 }
 
-.search-container {
+.searchcontainer {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -85,7 +89,7 @@ body {
   background-color: transparent;
 }
 
-.form-control {
+.formcontrol {
   flex: 1;
   border: 0;
   height: 100%;
@@ -103,7 +107,7 @@ body {
   justify-content: center;
 }
 
-.search-button {
+.searchbtn {
   margin-right: 5px;
   background: none;
   border: none;
@@ -195,7 +199,7 @@ nav > span {
   display: block;
 }
 
-.container {
+.container1 {
   display: block;
   width: 100%;
   max-width: 134rem;
@@ -203,14 +207,26 @@ nav > span {
   margin-left: auto;
   padding-right: 2.4rem;
   padding-left: 2.4rem;
-}
+  margin-top: 10px;
+  font-family: "Times";
 
+
+}
+.coursesheader{
+  font-size: 2rem;
+}
+.coursepassage{
+  font-size: 1.75rem;
+}
+.bootstraplist > a{
+   color:#000000;
+}
 .courses-title {
   font-size: 42px;
   font-weight: 500;
 }
 
-.courses_list {
+.nav-tabs {
   display: grid;
   grid-auto-columns: max-content;
   grid-auto-flow: column;
@@ -223,11 +239,11 @@ nav > span {
   line-height: 2;
 }
 
-.selected-category {
+.active {
   color: black;
 }
 
-.courses-nav {
+.pythoncourses,.excelcourses, .webcourses ,.datacourses,.javacourses,.drawingcourses,.awscourses{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
 }
@@ -257,36 +273,40 @@ nav > span {
   border-radius: 0;
   border-width: 1px;
   background-color: white;
+  margin-left: 2%;
 }
 .explore:hover {
   background-color: rgb(0, 0, 0, 5%);
 }
-
-.courses-nav li {
+.pythoncourses,.excelcourses, .webcourses ,.datacourses,.javacourses,.drawingcourses,.awscourses{
+  margin-left: -2.5%;
+}
+.courseblock {
   display: flex;
   flex-flow: column nowrap;
   margin: 20px;
   text-align: left;
 }
 
-.courses-nav li img {
+.image {
   border-style: solid;
   border-width: 1px;
   border-color: grey;
 }
 
-.courses-nav li .title {
+.title {
   margin: 5px;
   font-size: 15px;
+  font-weight: bold;
 }
 
-.courses-nav li .author {
+.author {
   margin: 5px;
   font-weight: 400;
   font-size: 12px;
 }
 
-.courses-nav li .price {
+.price {
   padding-left: 10px;
   margin: 5px;
 }
@@ -308,7 +328,7 @@ nav > span {
   margin-top: 5%;
 
 }
-header {
+.headercontent {
   background-color: #fafafa;
   justify-content: space-around;
   align-items: center;
@@ -334,7 +354,7 @@ header {
   font-size: large;
 }
 
-header > img {
+headercontent > img {
   height: 100%;
 }
 .fa-star {
@@ -349,14 +369,24 @@ header > img {
   font-weight: 700;
   margin-left: 2%;
 }
-.reviewers{
+.reviews{
   color:grey;
+}
+
+.container{
+  font-family: "Times";
+  margin-left: -10px;
+}
+.container img {
+  width:100%;
+  margin-top:20px;
+  margin-bottom: 7px;
 }
 
 /*responsive*/
 @media screen and (max-width: 800px) {
   /**********navigation bar********/
-  .dropdown ,.search-container,.business,.teach,.language,.cart, .login,.signup 
+  .dropdown ,.searchcontainer,.business,.teach,.language,.cart, .login,.signup 
   {
     display: none;
   }
@@ -383,8 +413,8 @@ header > img {
     color:yellow;
   }
  
-  /***************header******************/
-  .header{
+  /***************headercontent******************/
+  .headercontent{
     flex-direction: column-reverse;
     background-color: #ffffff;
     height: auto;
@@ -418,21 +448,21 @@ header > img {
   }
  /***************courses part******************/
 
- .container{
+ .container1{
   margin-left: 0%;
 
  }
- .courses_list {
+ .nav-tabs {
     display:inline-block;
     width: 100%;
     padding:0;
     font-size: 1rem;
     margin-left: 0%;
  }
- .courses-nav{
+ .pythoncourses,.excelcourses, .webcourses ,.datacourses,.javacourses,.drawingcourses,.awscourses{
   padding:0;
  }
- .container > h{
+ .container1 > h{
     font-size: larger;
  }
  .course_title{
@@ -440,8 +470,6 @@ header > img {
   text-align: center;
   font-size:x-large;
   margin-top: 2%;
-
-
  }
  .course_desc{
   margin-left: 5%;

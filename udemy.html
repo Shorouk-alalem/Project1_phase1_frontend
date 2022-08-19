@@ -3,11 +3,14 @@
     <head>
         <meta charset=" UTF-8" name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="udemy.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <title>Udemy HomePage</title>
     </head>
     <body>
-        <nav class="navbar">
+        <nav class="navigationbar">
             <img alt="menu" class="menu" src="https://img.icons8.com/ios-glyphs/344/menu--v1.png" />
             <img class="logo" src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" alt="Udemy Logo" />
             <div class="dropdown">
@@ -28,10 +31,10 @@
                         <a href="#">Teaching & Academics</a>
                     </div>
             </div>
-            <div class="search-container">
+            <div class="searchcontainer">
                 <form class="form-inline">
-                    <button class="search-button" type="submit"><img alt="icon" class="search-image" src="https://img.icons8.com/ios-glyphs/344/search--v1.png" /></button>
-                    <input class="form-control" type="text" placeholder="Search for anything" aria-label="Search" />
+                    <button class="searchbtn" type="submit"><img alt="icon" class="search-image" src="https://img.icons8.com/ios-glyphs/344/search--v1.png" /></button>
+                    <input class="formcontrol" type="text" placeholder="Search for anything" aria-label="Search" />
                 </form>
             </div>
             <span class="business">Udemy Business</span>
@@ -42,197 +45,274 @@
             <button class="signup">Sign Up</button>
             <button class="language"><img alt="icon" src="https://img.icons8.com/material-outlined/344/globe--v2.png" /></button>
         </nav>
-        <header class="header">
+        <headercontent class="headercontent">
             <div class="head-card">
                 <b class="headtitle">New to Udemy? Lucky you.</b>
                 <span class="headtxt">Courses start at E£169.99. Get your new-student offer before it expires.</span>
             </div>
             <div class="clockimg"><img src="Images\clock.jpg" alt="alarm clock image" /> </div>
-        </header>
+        </headercontent>
         <div class="courses">
-            <div class="container">
-                <h><b>A broad selection of courses</b></h>
-                <p><br>Choose from 185,000 online video courses with new additions published every month</p>
-                <ul class="courses_list">
-                    <il class="selected-category"> Python </il>
-                    <il>  Excel </il>
-                    <il>  Web Development </il>
-                    <il>  JavaScript </il>
-                    <il>  Data Science </il>
-                    <il>  AWS Certification </il>
-                    <il>  Drawing </il>
+            <div class="container1">
+                <h class="coursesheader"><b>A broad selection of courses</b></h>
+                <p class="coursepassage"><br>Choose from 185,000 online video courses with new additions published every month</p>
+                <ul class="nav nav-tabs ">
+                    <li class="active"><a data-toggle="tab" href="#python">Python </a></li>
+                    <li><a data-toggle="tab" href="#Excel">  Excel </a></li>
+                    <li><a data-toggle="tab" href="#WebDevelopment">  Web Development </a></li>
+                    <li><a data-toggle="tab" href="#JavaScript">  JavaScript </a></li>
+                    <li><a data-toggle="tab" href="#DataScience">  Data Science </a></li>
+                    <li><a data-toggle="tab" href="#AWSCertification">  AWS Certification </a></li>
+                    <li><a data-toggle="tab" href="#Drawing">  Drawing </a></li>
                 </ul>
             </div>
             <div class="courses-block">
-                <h class="course_title"> <b>Expand your career opportunities with Python</b> </h>
-                <p class="course_desc">Take one of Udemy’s range of Python courses and learn how to code using
-                    this incredibly useful language. Its <br>simple syntax and readability
-                    makes Python perfect for Flask, Django, data science, and machine
-                    learning. You’ll<br> learn how to build everything from games to sites 
-                    to apps. Choose from a range of courses that will appeal to...
-                </p>
-                <button class="explore">Explore Python</button>
-
-                <ul class="courses-nav">
-                    <li class="courseblock">
-                        <img class="image" alt="image"   src="">
-                        <h3 class="title"></h3>
-                        <h4 class="author"></h4>
-                        <div class="rating">
-                            <span class="rate"></span>
-                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
-                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
-                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
-                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
-                            <span class="fa fa-star-half-o" style="color:rgb(255, 166, 0) "></span>
-                            <span class="reviewers" ></span>
-
+                <div class="tab-content">
+<!---------------------------------------PYTHON TAB--------------------------------------->
+                    <div id="python" class="tab-pane fade in active">
+                        <h class="course_title"> <b>Expand your career opportunities with Python</b> </h>
+                        <p class="course_desc">Take one of Udemy’s range of Python courses and learn how to code using
+                            this incredibly useful language. Its <br>simple syntax and readability
+                            makes Python perfect for Flask, Django, data science, and machine
+                            learning. You’ll<br> learn how to build everything from games to sites 
+                            to apps. Choose from a range of courses that will appeal to...
+                        </p>
+                        <button class="explore">Explore Python</button>
+                        <div class="list">
+                            <div class= "pythoncourses">
+                            <template  id="pythoncourses">
+                                 <div class="courseblock">
+                                    <img class="image" alt="image"   src="">
+                                    <h3 class="title"></h3>
+                                    <h4 class="author"></h4>
+                                    <div class="rating">
+                                        <span class="rate"></span>
+                                        <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                                        <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                                        <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                                        <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                                        <span class="fa fa-star-half-o" style="color:rgb(255, 166, 0) "></span>
+                                        <span class="reviews" ></span>
+                                    </div>
+                                    <div class="cost">
+                                        <span class="price"><h3></h3></span> 
+                                        <span class="pre_discount"><h3></h3></span>
+                                    </div>
+                                    <div class="bestseller"></div>
+                                </div>
+                            </template>
+                        </div> </div>
+                    </div>
+<!---------------------------------------EXCEL TAB--------------------------------------->
+                    <div id="Excel" class="tab-pane fade">
+                        <h class="course_title"> <b>Analyze and visualize data with Excel</b> </h>
+                        <p class="course_desc">Take a Microsoft Excel course from Udemy, and learn how to use this
+                             industry-standard software. Real-world<br>experts will show you the basics like how
+                              to organize data into sheets, rows and columns, and advanced<br> techniques like creating complex dynamic formulas. Both small businesses and
+                             large companies use Excel to...
+                        </p>
+                        <button class="explore">Explore Excel</button>
+                        <div class= "excelcourses">
+                            <template  id="excelcourses">
+                               <ul> <il class="courseblock">
+                                    <img class="image" alt="image"   src="">
+                                    <h3 class="title"></h3>
+                                    <h4 class="author"></h4>
+                                    <div class="rating">
+                                        <span class="rate"></span>
+                                        <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                                        <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                                        <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                                        <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                                        <span class="fa fa-star-half-o" style="color:rgb(255, 166, 0) "></span>
+                                        <span class="reviews" ></span>
+                                    </div>
+                                    <div class="cost">
+                                        <span class="price"><h3></h3></span> 
+                                        <span class="pre_discount"><h3></h3></span>
+                                    </div>
+                                    <div class="bestseller"></div>
+                                </il></ul>
+                            </template>
                         </div>
-                        <div class="cost">
-                            <span class="price"><h3></h3></span> 
-                            <span class="pre_discount"><h3></h3></span>
+                    </div>
+<!---------------------------------------Web DEVELOPMENT TAB--------------------------------------->
+                    <div id="WebDevelopment" class="tab-pane fade">
+                        <h class="course_title"> <b>Build websites and applications with Web Development</b> </h>
+                        <p class="course_desc">The world of web development is as wide as the internet itself.
+                             Much of our social and vocational lives play out<br>on the internet, which prompts 
+                             new industries aimed at creating, managing, and debugging the websites and<br>
+                              applications that we increasingly rely on...
+                        </p>
+                        <button class="explore">Explore Web development</button>
+                        <div class= "webcourses">
+                            <template  id="webcourses">
+                               <ul> <il class="courseblock">
+                                    <img class="image" alt="image"   src="">
+                                    <h3 class="title"></h3>
+                                    <h4 class="author"></h4>
+                                    <div class="rating">
+                                        <span class="rate"></span>
+                                        <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                                        <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                                        <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                                        <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                                        <span class="fa fa-star-half-o" style="color:rgb(255, 166, 0) "></span>
+                                        <span class="reviews" ></span>
+                                    </div>
+                                    <div class="cost">
+                                        <span class="price"><h3></h3></span> 
+                                        <span class="pre_discount"><h3></h3></span>
+                                    </div>
+                                    <div class="bestseller"></div>
+                                </il></ul>
+                            </template>
                         </div>
-                        <div class="bestseller"></div>
-
-
-                    </li>
-                    
-                    <li class="courseblock">
-                        <img class="image" alt="image"  src="">
-                        <h3 class="title"></h3>
-                        <h4 class="author"></h4>
-                        <div class="rating">
-                            <span class="rate"></span>
-                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
-                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
-                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
-                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
-                            <span class="fa fa-star-half-o" style="color:rgb(255, 166, 0) "></span>
-                            <span class="reviewers" ></span>
-
+                    </div>
+<!---------------------------------------JAVA SCRIPT TAB--------------------------------------->
+                    <div id="JavaScript" class="tab-pane fade">
+                        <h class="course_title"> <b>Grow your software development skills with JavaScript</b> </h>
+                        <p class="course_desc">The world of web development is as wide as the internet itself. Much of our social and vocational lives play out<br>on the internet, which prompts 
+                            aspiring web developers or programmers, JavaScript can be used for features like image carousels, displaying<br>
+                            countdowns and timers, and playing media on a webpage. With JavaScript online classes, you can learn to buil...
+                        </p>
+                        <button class="explore">Explore JavaScript</button>
+                        <div class= "javacourses">
+                            <template  id="javacourses">
+                               <ul> <il class="courseblock">
+                                    <img class="image" alt="image"   src="">
+                                    <h3 class="title"></h3>
+                                    <h4 class="author"></h4>
+                                    <div class="rating">
+                                        <span class="rate"></span>
+                                        <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                                        <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                                        <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                                        <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                                        <span class="fa fa-star-half-o" style="color:rgb(255, 166, 0) "></span>
+                                        <span class="reviews" ></span>
+                                    </div>
+                                    <div class="cost">
+                                        <span class="price"><h3></h3></span> 
+                                        <span class="pre_discount"><h3></h3></span>
+                                    </div>
+                                    <div class="bestseller"></div>
+                                </il></ul>
+                            </template>
                         </div>
-                        <div class="cost">
-                            <span class="price"><h3></h3></span> 
-                            <span class="pre_discount"><h3></h3></span>
+                    </div>
+<!-----------------------------DATA SCIENCE TAB------------------------------------>
+                    <div id="DataScience" class="tab-pane fade">
+                        <h class="course_title"> <b>Lead data-driven decisions with Data Science</b> </h>
+                        <p class="course_desc">Data science application is an in-demand skill in many industries worldwide — including finance, transportation,<br> 
+                            education, manufacturing, human resources, and banking. Explore data science courses with Python, statistics,<br>
+                            machine learning, and more to grow your knowledge. Get data science training if you’re into research, statistics,...
+                        </p>
+                        <button class="explore">Explore Data Science</button>
+                        <div class= "datacourses">
+                            <template  id="datacourses">
+                               <ul> <il class="courseblock">
+                                    <img class="image" alt="image"   src="">
+                                    <h3 class="title"></h3>
+                                    <h4 class="author"></h4>
+                                    <div class="rating">
+                                        <span class="rate"></span>
+                                        <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                                        <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                                        <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                                        <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                                        <span class="fa fa-star-half-o" style="color:rgb(255, 166, 0) "></span>
+                                        <span class="reviews" ></span>
+                                    </div>
+                                    <div class="cost">
+                                        <span class="price"><h3></h3></span> 
+                                        <span class="pre_discount"><h3></h3></span>
+                                    </div>
+                                    <div class="bestseller"></div>
+                                </il></ul>
+                            </template>
                         </div>
-                        <div class="bestseller"></div>
-
-
-
-                    </li>
-                    
-                    <li class="courseblock">
-                        <img class="image" alt="image"  src="">
-                        <h3 class="title"></h3>
-                        <h4 class="author"></h4>
-                        <div class="rating">
-                            <span class="rate"></span>
-                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
-                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
-                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
-                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
-                            <span class="fa fa-star-half-o" style="color:rgb(255, 166, 0) "></span>
-                            <span class="reviewers" ></span>
-
+                    </div>
+<!---------------------------------AWS CERTIFICATION TAB-------------------------->
+                    <div id="AWSCertification" class="tab-pane fade">
+                        <h class="course_title"> <b>Become an expert in cloud computing with AWS Certification   </b> </h>
+                        <p class="course_desc">Prep for your AWS certification with an AWS course on Udemy. Learn the fundamentals of AWS such as working<br> 
+                            with a serverless platform, the various frameworks, security and more. With these courses, you’ll build the<br>
+                            valuable skills you need to implement cloud initiatives — and open up new career opportunities. If you want to...
+                        </p>
+                        <button class="explore">Explore AWS Certification</button>
+                        <div class= "awscourses">
+                            <template  id="awscourses">
+                               <ul> <il class="courseblock">
+                                    <img class="image" alt="image"   src="">
+                                    <h3 class="title"></h3>
+                                    <h4 class="author"></h4>
+                                    <div class="rating">
+                                        <span class="rate"></span>
+                                        <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                                        <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                                        <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                                        <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                                        <span class="fa fa-star-half-o" style="color:rgb(255, 166, 0) "></span>
+                                        <span class="reviews" ></span>
+                                    </div>
+                                    <div class="cost">
+                                        <span class="price"><h3></h3></span> 
+                                        <span class="pre_discount"><h3></h3></span>
+                                    </div>
+                                    <div class="bestseller"></div>
+                                </il></ul>
+                            </template>
                         </div>
-                        <div class="cost">
-                            <span class="price"><h3></h3></span> 
-                            <span class="pre_discount"><h3></h3></span>
+                    </div>
+<!--------------------------------DRAWING TAB----------------------------------->
+                    <div id="Drawing" class="tab-pane fade">
+                        <h class="course_title"> <b>Expand your creative skillset with Drawing </b> </h>
+                        <p class="course_desc">Want to start drawing for fun or take your craft to the next level? Explore our online drawing classes and learn<br> 
+                            pencil drawing, figure drawing, cartoon drawing, character drawing for cartoons and anime, illustration,<br>
+                            sketching, shading and more. Take an overview course on the fundamentals of drawing or zero in on an area...
+                        </p>
+                        <button class="explore">Explore Drawing</button>
+                        <div class= "drawingcourses">
+                            <template  id="drawingcourses">
+                               <ul> <il class="courseblock">
+                                    <img class="image" alt="image"   src="">
+                                    <h3 class="title"></h3>
+                                    <h4 class="author"></h4>
+                                    <div class="rating">
+                                        <span class="rate"></span>
+                                        <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                                        <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                                        <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                                        <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
+                                        <span class="fa fa-star-half-o" style="color:rgb(255, 166, 0) "></span>
+                                        <span class="reviews" ></span>
+                                    </div>
+                                    <div class="cost">
+                                        <span class="price"><h3></h3></span> 
+                                        <span class="pre_discount"><h3></h3></span>
+                                    </div>
+                                    <div class="bestseller"></div>
+                                </il></ul>
+                            </template>
                         </div>
-                        <div class="bestseller"></div>
-
-
-                    </li>
-                    
-                    <li class="courseblock">
-                        <img class="image" alt="image"   src="">
-                        <h3 class="title"></h3>
-                        <h4 class="author"></h4>
-                        <div class="rating">
-                            <span class="rate"></span>
-                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
-                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
-                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
-                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
-                            <span class="fa fa-star-half-o" style="color:rgb(255, 166, 0) "></span>
-                            <span class="reviewers" ></span>
-
-                        </div>
-                        <div class="cost">
-                            <span class="price"><h3></h3></span> 
-                            <span class="pre_discount"><h3></h3></span>
-                        </div>
-                        <div class="bestseller"></div>
-
-                    </li>
-                    
-                    <li class="courseblock">
-                        <img class="image" alt="image" src="">
-                        <h3 class="title"></h3>
-                        <h4 class="author"></h4>
-                        <div class="rating">
-                            <span class="rate"></span>
-                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
-                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
-                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
-                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
-                            <span class="fa fa-star-half-o" style="color:rgb(255, 166, 0) "></span>
-                            <span class="reviewers" ></span>
-
-                        </div>   
-                        <div class="cost">
-                            <span class="price"><h3></h3></span> 
-                            <span class="pre_discount"><h3></h3></span>
-                        </div>
-                        <div class="bestseller"></div>
-
-   
-                    </li>
-                    <li class="courseblock">
-                        <img class="image" alt="image"  src="">
-                        <h3 class="title"></h3>
-                        <h4 class="author"></h4>
-                        <div class="rating">
-                            <span class="rate"></span>
-                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
-                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
-                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
-                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
-                            <span class="fa fa-star-half-o" style="color:rgb(255, 166, 0) "></span>
-                            <span class="reviewers" ></span>
-
-                        </div>
-                        <div class="cost">
-                            <span class="price"></span> 
-                            <span class="pre_discount"></span>
-                        </div>
-                        <div class="bestseller"></div>
-                    </li>
-                    <li class="courseblock">
-                        <img class="image" alt="image" src="">
-                        <h3 class="title"></h3>
-                        <h4 class="author"></h4>
-                        <div class="rating">
-                            <span class="rate"></span>
-                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
-                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
-                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
-                            <span class="fa fa-star checked" style="color:rgb(255, 166, 0)"></span>
-                            <span class="fa fa-star-half-o" style="color:rgb(255, 166, 0) "></span>
-                            <span class="reviewers" ></span>
-
-                        </div>
-                        <div class="cost">
-                            <span class="price"></span> 
-                            <span class="pre_discount"></span>
-                        </div>
-                        <span class="bestseller"></span>
-
-
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </div>
+<!---------------------------------------------GRID SECTION ---------------------------->
+        <div class="container">
+            <div class="gridheader"><h2><b>Top categories </b></h2></div>
+            <div class="col-sm-12 col-md-4 col-lg-3" ><img  alt="image" src="https://s.udemycdn.com/home/top-categories/lohp-category-design-2x-v2.jpg"><h4><b>Design</b></h4></div>
+            <div class="col-sm-12 col-md-4 col-lg-3" ><img  alt="image"  src="https://s.udemycdn.com/home/top-categories/lohp-category-development-2x-v2.jpg"><h4><b>Development</b></h4></div>
+            <div class="col-sm-12 col-md-4 col-lg-3" ><img  alt="image" src="https://s.udemycdn.com/home/top-categories/lohp-category-marketing-2x-v2.jpg"><h4><b>Marketing</b></h4></div>
+            <div class="col-sm-12 col-md-4 col-lg-3" ><img  alt="image" src="https://s.udemycdn.com/home/top-categories/lohp-category-it-and-software-2x-v2.jpg"><h4><b>It & Software</b></h4></div>
+            <div class="col-sm-12 col-md-4 col-lg-3" ><img  alt="image" src="https://s.udemycdn.com/home/top-categories/lohp-category-personal-development-2x-v2.jpg"><h4><b>Personal Development</b></h4></div>
+            <div class="col-sm-12 col-md-4 col-lg-3" ><img  alt="image"  src="https://s.udemycdn.com/home/top-categories/lohp-category-business-2x-v2.jpg"><h4><b>Business</b></h4></div>
+            <div class="col-sm-12 col-md-4 col-lg-3" ><img  alt="image" src="https://s.udemycdn.com/home/top-categories/lohp-category-photography-2x-v2.jpg"><h4><b>Photography</b></h4></div>
+            <div class="col-sm-12 col-md-4 col-lg-3" ><img  alt="image" src="https://s.udemycdn.com/home/top-categories/lohp-category-music-2x-v2.jpg"><h4><b>Music</b></h4></div>
+        </div>
+        
         <script src="udemy.js"></script>
     </body> 
 </html>
